@@ -58,4 +58,50 @@ body {
     line-height: 1.5;
     color: #444;
   }
+
+  #services {
+    background-color: #f7f9fc;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+  }
+  
+  #contact {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 60px;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .project-card a {
+    text-decoration: none;
+    color: #1f6feb;
+    transition: color 0.2s ease;
+  }
+  
+  .project-card a:hover {
+    color: #0a58ca;
+  }
+
+  body {
+    padding: 0 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    padding: 40px 0 20px;
+  }
   
