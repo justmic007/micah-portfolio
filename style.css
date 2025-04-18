@@ -1,30 +1,84 @@
-/* General Typography */
+/* Base Reset */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     margin: 0;
-    padding: 0 20px;
-    background-color: #f9f9f9;
+    padding: 0;
+    background-color: #e9efff; /* Soft tech blue */
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  /* Section spacing */
-  #services {
-    margin-bottom: 40px;
+  /* Section Styling */
+  section {
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid #e3e8f0;
   }
   
-  #projects h2 {
+  /* Header & Tagline */
+  h1 {
     text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 60px;
     margin-bottom: 20px;
+    color: #1f1f1f;
   }
   
+  header p {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto 30px;
+  }
+  
+  /* Section Titles */
+  h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #1f6feb;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Services */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 1.5rem;
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    border-left: 4px solid #1f6feb;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+  }
+  
+  /* Projects Grid */
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
   }
   
-  /* Project card style */
   .project-card {
     background: #ffffff;
     padding: 20px;
@@ -47,10 +101,11 @@ body {
   .project-card a {
     text-decoration: none;
     color: #1f6feb;
+    transition: color 0.2s ease;
   }
   
   .project-card a:hover {
-    color: #0d6efd;
+    color: #0a58ca;
   }
   
   .project-card p {
@@ -58,195 +113,35 @@ body {
     line-height: 1.5;
     color: #444;
   }
-
-  #services {
-    background-color: #f7f9fc;
-    padding: 40px 20px;
-    border-radius: 8px;
-    margin-bottom: 60px;
+  
+  /* Contact Section */
+  #contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
   }
   
-  #contact {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-radius: 8px;
-    margin-top: 60px;
+  #contact li {
+    margin: 8px 0;
+    font-size: 0.95rem;
   }
   
-  h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: #222;
-  }
-  
-  h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-
-  .project-card a {
-    text-decoration: none;
+  #contact a {
     color: #1f6feb;
-    transition: color 0.2s ease;
+    text-decoration: none;
   }
   
-  .project-card a:hover {
-    color: #0a58ca;
-  }
-
-  body {
-    padding: 0 1rem;
+  #contact a:hover {
+    text-decoration: underline;
   }
   
+  /* Footer */
   footer {
     text-align: center;
     font-size: 0.85rem;
     color: #666;
     padding: 40px 0 20px;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    margin-top: 1.5rem;
-  }
-  
-  .service-card {
-    background-color: #ffffff;
-    border-left: 4px solid #1f6feb;
-    border-radius: 8px;
-    padding: 16px 20px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .service-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  
-  .service-card:hover {
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-    transform: translateY(-3px);
-    transition: all 0.3s ease;
-  }
-
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-
-  /* h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color: #1f6feb;
-    text-align: center;
-    font-weight: 600;
-  } */
-
-  h2 {
-    text-align: center;
-    font-size: 1.75rem;
-    color: #1f6feb;
-    margin-top: 40px;
-  }
-  
-
-  footer {
     background: #f1f1f1;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    color: #555;
-    text-align: center;
     border-top: 1px solid #ddd;
-  }
-  
-  section {
-    margin-bottom: 60px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  /* h1 {
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    color: #1f1f1f;
-  } */
-  
-
-  header p {
-    text-align: center;
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto 40px;
-    color: #555;
-  }
-
-  header p {
-    text-align: center;
-    font-size: 1.05rem;
-    color: #555;
-    max-width: 750px;
-    margin: 0 auto 30px;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #1f1f1f;
-    margin-bottom: 16px;
-  }
-
-
-  body {
-    background-color: #acbbd7;
-  }
-  
-  #services,
-  #projects,
-  #contact {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 40px 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    margin-bottom: 40px;
-  }
-
-.project-card,
-.service-card {
-  background-color: #ffffff;
-  border-left: 4px solid #1f6feb;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.project-card:hover,
-.service-card:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  transform: translateY(-4px);
-}
-
-
-.button {
-    background-color: #1f6feb;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-  }
-  
-  .button:hover {
-    background-color: #0d6efd;
   }
   
